@@ -18,10 +18,23 @@
     display: none;
     position: relative;
     animation: 0.5s ease-in-out;
-    margin: 10px;
+    margin: 50px 50px 0px 50px;
+}
+
+.control-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin: 0 50px;
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    cursor: pointer; */
 }
 
 .mem-text-area {
+    flex: 70%;
     display: none;
 }
 
@@ -37,23 +50,11 @@
 }
 
 .description {
-    /* display: flex; */
-    margin: 30px 20%;
+    margin: 20px 40px 40px 40px;
     font-size: 32px;
-    border: 2px solid black;
-    font-;
-    justify-content: space-between;
-}
-
-.control-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 15%;
-    cursor: pointer; */
+    color:white;
+    /* border: 2px solid white; */
+    text-align: left;
 }
 
 .buttons-area {
@@ -61,12 +62,15 @@
     display: -ms-flexbox;
     display: flex;
     margin-right: 55px;
+    vertical-align: text-bottom;
 }
 
 .item_button {
     display: block;
+    margin: 30px 0;
     width: 16px;
     height: 16px;
+    border-radius: 50%;
     background-color: #fff;
     -webkit-transition: background-color .3s ease-out;
     -o-transition: background-color .3s ease-out;
@@ -75,12 +79,12 @@
 
 .item_button:not(:last-child) {
     margin-right: 25px;
-  }
+}
   
-  .item_button-current {
+.item_button-current {
     background-color: #D2B183;
-  }
+}
   
-  .item_button:hover:hover {
+.item_button:hover:hover {
     background-color: #9d8665;
-  }
+}
